@@ -18,37 +18,42 @@ def Passworterstellen():
     zufall_1 = randint(1,2)
     i = 0
     while i<zufall_1:
-      eins = liste_br[randint(0,14)] 
-      zwei = liste_eu[randint(0,8)]
-      drei = liste_fl[randint(0,12)]
+      print(liste_br[randint(0,14)]) 
+      print(liste_eu[randint(0,8)])
+      print(liste_fl[randint(0,12)])
         #print
         #print
         #print
       i = i+1
 
 
-    zahl = liste_22[randint(0,99)]
+    print(liste_22[randint(0,99)])
 
 
     zufall_2 = randint(1,2)
     i = 0
     while i<zufall_2:
-      vier = liste_fm[randint(0,14)]
-      fuenf = liste_ei[randint(0,8)]
-      sechs = liste_ft[randint(0,5)]
+      print(liste_fm[randint(0,14)])
+      print(liste_ei[randint(0,8)])
+      print(liste_ft[randint(0,5)])
       #print
       #print
       #print
       i = i+1
-    ausgeben = [eins,zwei,drei,zahl,vier,fuenf,sechs]
+
+
+
+    
+    #ausgeben = [eins,zwei,drei,zahl,vier,fuenf,sechs]
     #uninteressant = " "
 
-       
-    ausgeben_eins = ausgeben[0] + ausgeben[1] + ausgeben[2] 
+    #ausgeben_eins = 
     
-    ausgeben_zahl = ausgeben[3]
+    #ausgeben_eins = ausgeben[0] + ausgeben[1] + ausgeben[2] 
+    
+    #ausgeben_zahl = ausgeben[3]
 
-    ausgeben_zwei = ausgeben[4] + ausgeben[5] + ausgeben[6]
+    #ausgeben_zwei = ausgeben[4] + ausgeben[5] + ausgeben[6]
 
     #ausgeben_zwei = ausgeben[1]
     #ausgeben_drei = ausgeben[2]
@@ -70,7 +75,7 @@ def Passworterstellen():
   #alles = [ausgeben[]]
   
 
-    print(ausgeben_eins , ausgeben_zahl , ausgeben_zwei)
+    #print(ausgeben_eins , ausgeben_zahl , ausgeben_zwei)
     
     #keineAhnung = ["Hallo","Hello","hallo","hello"]
     #print(keineAhnung[0])
@@ -81,15 +86,7 @@ def Passworterstellen():
     #zufall3 = randint(0,zufall2)
     #zufall4 = randint(0,zufall3)
     #zufall5 = randint(0,zufall4)
-
-    ...
-    #print(zufall)
-    #print(zufall1)
-    #print(zufall2)
-    #print(zufall3)
-    #print(zufall4)
-    #print(zufall5)
-
+    
     
     #i = 0
     #e2 = 'ä'
@@ -103,17 +100,6 @@ def Passworterstellen():
 #Der Hauptcode indem alle Funktionen aufgerufen werden
 
 
-print("Erste Option:")
-Passworterstellen()
 
-print()
-sleep(1)
-print("Zweite Option:")
-
-Passworterstellen()
-
-print()
-sleep(1)
-print("Dritte Option:")
 
 Passworterstellen()
