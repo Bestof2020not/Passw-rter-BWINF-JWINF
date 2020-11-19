@@ -18,30 +18,30 @@ def Passworterstellen():
     zufall_1 = randint(1,2)
     i = 0
     while i<zufall_1:
-      print(liste_br[randint(0,14)]) 
-      print(liste_eu[randint(0,8)])
-      print(liste_fl[randint(0,12)])
+      br = liste_br[randint(0,14)] 
+      eu = liste_eu[randint(0,8)]
+      fl = liste_fl[randint(0,12)]
         #print
         #print
         #print
       i = i+1
 
 
-    print(liste_22[randint(0,99)])
+    zahl = liste_22[randint(0,99)]
 
 
     zufall_2 = randint(1,2)
     i = 0
     while i<zufall_2:
-      print(liste_fm[randint(0,14)])
-      print(liste_ei[randint(0,8)])
-      print(liste_ft[randint(0,5)])
+      fm = liste_fm[randint(0,14)]
+      ei = liste_ei[randint(0,8)]
+      ft = liste_ft[randint(0,5)]
       #print
       #print
       #print
       i = i+1
 
-
+    print(br , eu , fl , zahl , fm , ei , ft)
 
     
     #ausgeben = [eins,zwei,drei,zahl,vier,fuenf,sechs]
