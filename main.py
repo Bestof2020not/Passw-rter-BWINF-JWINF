@@ -2,6 +2,7 @@
 from time import sleep
 from random import randint
 #Alle Listen werden erstellt
+
 liste_br = ['B','Br','Bl','D','Dr','Fr','Fl','F','St','Sp','Sch','S','H','M','N']
 liste_eu = ['eu','au','e','a','i','o','u','ei','ie']
 liste_fl = ['fl','ch','pf','g','n','m','f','g','d','b','mt','r','s']
@@ -11,37 +12,46 @@ liste_22 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,            
             52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99]
 liste_fm = ['B','Br','Bl','D','Dr','Fr','Fl','F','St','Sp','Sch','S','H','M','N']
 liste_ei = ['o','eu','au','e','a','i','u','ei','ie']
-liste_ft = ['f','n','m','g','d','b','mt','r','s']
+liste_ft = ['f','n','m','g','d','b','t','r','s']
+
 #Die Funktion zum erstellen des Passwortes
 def Passworterstellen():
 
-    zufall_1 = randint(1,2)
-    i = 0
-    while i<zufall_1:
-      bef = [liste_br[randint(0,14)], 
+  bef = ["" , "" , "" ]
+  bef_2 = ["" , "" , "" , "" , "" , ""]
+  zufall_1 = randint (1,2)
+    
+  if zufall_1 == 1:
+    bef = [liste_br[randint(0,14)], 
       liste_eu[randint(0,8)],
       liste_fl[randint(0,12)]]
-        #print
-        #print
-        #print
-      i = i+1
+
+  else:
+    bef_2 = [liste_br[randint(0,14)], 
+      liste_eu[randint(0,8)],
+      liste_fl[randint(0,12)] , 
+      liste_br[randint(0,14)], 
+      liste_eu[randint(0,8)],
+      liste_fl[randint(0,12)]]
+      
 
 
-    zahl = liste_22[randint(0,99)]
+
+  zahl = liste_22[randint(0,99)]
 
 
-    zufall_2 = randint(1,2)
-    i = 0
-    while i<zufall_2:
-      fef = [liste_fm[randint(0,14)],
-      liste_ei[randint(0,8)],
-      liste_ft[randint(0,5)]]
+  zufall_2 = randint(1,2)
+  i = 0
+  while i<zufall_2:
+    fef = [liste_fm[randint(0,14)],
+    liste_ei[randint(0,8)],
+    liste_ft[randint(0,5)]]
       #print
       #print
       #print
-      i = i+1
+    i = i+1
 
-    print(bef[0] +  bef[1]+  bef[2]+ str(zahl) + fef[0]+ fef[1]+ fef[2])
+  print(bef[0] +  bef[1]+  bef[2] + bef_2[0] +  bef_2[1]+  bef_2[2] + bef_2[3] +  bef_2[4]+  bef_2[5]+ str(zahl) + fef[0]+ fef[1]+ fef[2])
 
     
     #ausgeben = [eins,zwei,drei,zahl,vier,fuenf,sechs]
