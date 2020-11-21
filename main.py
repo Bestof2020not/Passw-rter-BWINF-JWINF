@@ -41,7 +41,7 @@ def Passworterstellen():
       #print
       i = i+1
 
-    print(bef[0], bef[1], bef[2], zahl , fef[0], fef[1], fef[2])
+    print(bef[0] +  bef[1]+  bef[2]+ str(zahl) + fef[0]+ fef[1]+ fef[2])
 
     
     #ausgeben = [eins,zwei,drei,zahl,vier,fuenf,sechs]
